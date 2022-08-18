@@ -1,7 +1,9 @@
 import React from 'react';
 import Card from '../UI/Card';
-import classes from './AddUser.module.css'
-import buttonCls from './Button.module.css'
+import classes from './AddUser.module.css';
+import buttonCls from './../UI/Button.module.css';
+import Button from './../UI/Button';
+
 const AddUser = props=>{
     const addUserHandler = (event) =>{
         event.preventDefault()
@@ -14,7 +16,7 @@ const AddUser = props=>{
             <input id="username" type="text"></input>
             <label htmlFor="username">Age (Years)</label>
             <input id="username" type="number"></input>
-            <button type="submit" className={buttonCls.button}>Add User</button>
+            <Button type="submit" className={buttonCls.button}>Add User</Button>
         </form>
         </Card>
     )
